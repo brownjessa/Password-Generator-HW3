@@ -133,3 +133,7 @@ function writePassword() {
     choices = number;
   } else if (yesLowercase) {
     choices = alpha;
+        // Make sure user can use spaces
+  } else if (yesUppercase) {
+    choices = space.concat(alpha2);
+  }
