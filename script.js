@@ -76,3 +76,8 @@ var toUpper = function (x) {
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
 alpha2 = alpha.map(toUpper);
 var get = document.querySelector("#generate");
+// OnClick Pop-Up
+get.addEventListener("click", function () {
+  ps = writePassword();
+  document.getElementById("password").placeholder = ps;
+});
