@@ -89,4 +89,9 @@ function writePassword() {
         "How long would you like your password to be? Please pick 8-128 characters."
       )
     );
-  
+  // require User Input and make sure user cannot just put nothing in and continue
+  if (!enter) {
+    alert("This needs a value");
+    // Make sure it is 8-128 characters
+  } else if (enter < 8 || enter > 128) {
+    enter = parseInt(prompt("Required password length: 8-128 characters."));
