@@ -83,12 +83,12 @@ get.addEventListener("click", function () {
 });
 // Write password to the #password input
 function writePassword() {
-    // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt
-    enter = parseInt(
-      prompt(
-        "How long would you like your password to be? Please pick 8-128 characters."
-      )
-    );
+  // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt
+  enter = parseInt(
+    prompt(
+      "How long would you like your password to be? Please pick 8-128 characters."
+    )
+  );
   // require User Input and make sure user cannot just put nothing in and continue
   if (!enter) {
     alert("This needs a value");
@@ -96,13 +96,13 @@ function writePassword() {
   } else if (enter < 8 || enter > 128) {
     enter = parseInt(prompt("Required password length: 8-128 characters."));
     // Make sure user knows password requirements in order to continue
-} else {
+  } else {
     yesNumber = confirm("Will you include numbers?");
     yesCharacter = confirm("Will you use special characters such as: !.$#?");
     yesUppercase = confirm("Will you use upper case letters?");
     yesLowercase = confirm("Will you use lower case letters?");
   }
-    // If user uses all good options they can continue
+  // If user uses all good options they can continue
   if (!yesCharacter && !yesNumber && !yesUppercase && !yesLowercase) {
     choices = alert("Please enter a criteria!");
   } else if (yesCharacter && yesNumber && yesUppercase && yesLowercase) {
@@ -117,7 +117,7 @@ function writePassword() {
     choices = number.concat(alpha, alpha2);
   } else if (yesCharacter && yesNumber) {
     choices = spCharacter.concat(number);
-} else if (yesCharacter && yesLowercase) {
+  } else if (yesCharacter && yesLowercase) {
     choices = spCharacter.concat(alpha);
   } else if (yesCharacter && yesUppercase) {
     choices = spCharacter.concat(alpha2);
@@ -133,7 +133,7 @@ function writePassword() {
     choices = number;
   } else if (yesLowercase) {
     choices = alpha;
-        // Make sure user can use spaces
+    // Make sure user can use spaces
   } else if (yesUppercase) {
     choices = space.concat(alpha2);
   }
@@ -143,3 +143,8 @@ function writePassword() {
     var pickChoices = choices[Math.floor(Math.random() * choices.length)];
     password.push(pickChoices);
   }
+  // Make it return the password
+  var ps = password.join("");
+  UserInput(ps);
+  return ps;
+}
