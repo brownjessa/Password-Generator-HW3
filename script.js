@@ -95,3 +95,10 @@ function writePassword() {
     // Make sure it is 8-128 characters
   } else if (enter < 8 || enter > 128) {
     enter = parseInt(prompt("Required password length: 8-128 characters."));
+    // Make sure user knows password requirements in order to continue
+} else {
+    yesNumber = confirm("Will you include numbers?");
+    yesCharacter = confirm("Will you use special characters such as: !.$#?");
+    yesUppercase = confirm("Will you use upper case letters?");
+    yesLowercase = confirm("Will you use lower case letters?");
+  }
