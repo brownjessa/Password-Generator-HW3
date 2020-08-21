@@ -117,3 +117,19 @@ function writePassword() {
     choices = number.concat(alpha, alpha2);
   } else if (yesCharacter && yesNumber) {
     choices = spCharacter.concat(number);
+} else if (yesCharacter && yesLowercase) {
+    choices = spCharacter.concat(alpha);
+  } else if (yesCharacter && yesUppercase) {
+    choices = spCharacter.concat(alpha2);
+  } else if (yesLowercase && yesNumber) {
+    choices = alpha.concat(number);
+  } else if (yesLowercase && yesUppercase) {
+    choices = alpha.concat(alpha2);
+  } else if (yesNumber && yesUppercase) {
+    choices = number.concat(alpha2);
+  } else if (yesCharacter) {
+    choices = spCharacter;
+  } else if (yesNumber) {
+    choices = number;
+  } else if (yesLowercase) {
+    choices = alpha;
