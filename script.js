@@ -137,3 +137,9 @@ function writePassword() {
   } else if (yesUppercase) {
     choices = space.concat(alpha2);
   }
+  var password = [];
+  // Use i to make random selection
+  for (var i = 0; i < enter; i++) {
+    var pickChoices = choices[Math.floor(Math.random() * choices.length)];
+    password.push(pickChoices);
+  }
