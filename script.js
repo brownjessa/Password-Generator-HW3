@@ -69,3 +69,10 @@ alpha = [
 ];
 space = [];
 var choices;
+// Create conversion for Uppers
+var toUpper = function (x) {
+  return x.toUpperCase();
+};
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
+alpha2 = alpha.map(toUpper);
+var get = document.querySelector("#generate");
