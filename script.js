@@ -81,3 +81,12 @@ get.addEventListener("click", function () {
   ps = writePassword();
   document.getElementById("password").placeholder = ps;
 });
+// Write password to the #password input
+function writePassword() {
+    // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt
+    enter = parseInt(
+      prompt(
+        "How long would you like your password to be? Please pick 8-128 characters."
+      )
+    );
+  
