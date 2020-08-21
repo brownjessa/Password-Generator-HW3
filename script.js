@@ -102,3 +102,18 @@ function writePassword() {
     yesUppercase = confirm("Will you use upper case letters?");
     yesLowercase = confirm("Will you use lower case letters?");
   }
+    // If user uses all good options they can continue
+  if (!yesCharacter && !yesNumber && !yesUppercase && !yesLowercase) {
+    choices = alert("Please enter a criteria!");
+  } else if (yesCharacter && yesNumber && yesUppercase && yesLowercase) {
+    choices = spCharacter.concat(number, alpha, alpha2);
+  } else if (yesCharacter && yesNumber && yesUppercase) {
+    choices = spCharacter.concat(number, alpha2);
+  } else if (yesCharacter && yesNumber && yesLowercase) {
+    choices = spCharacter.concat(number, alpha);
+  } else if (yesCharacter && yesLowercase && yesUppercase) {
+    choices = spCharacter.concat(alpha, alpha2);
+  } else if (yesNumber && yesLowercase && yesUppercase) {
+    choices = number.concat(alpha, alpha2);
+  } else if (yesCharacter && yesNumber) {
+    choices = spCharacter.concat(number);
