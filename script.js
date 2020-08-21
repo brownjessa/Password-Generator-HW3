@@ -148,3 +148,6 @@ function writePassword() {
   UserInput(ps);
   return ps;
 }
+function UserInput(ps) {
+  document.getElementById("password").textContent = ps;
+}
