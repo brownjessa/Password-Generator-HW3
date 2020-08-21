@@ -13,7 +13,26 @@
       <header>
         <h1>Password Generator</h1>
       </header>
-      <div class="card"></div>
+      <div class="card">
+        <div class="card-top">
+          <h2>Make a Password</h2>
+        </div>
+        <div class="card-middle">
+          <textarea
+            readonly
+            id="password"
+            placeholder="Your Secure Password"
+            aria-label="Generate Password"
+          >
+                  <!-- area where things will append to from script.js -->
+              </textarea
+          >
+        </div>
+        <br />
+        <div class="card-bottom">
+          <button id="generate" class="btn">Generate Password</button>
+        </div>
+      </div>
       <br />
     </div>
     <script src="script.js"></script>
