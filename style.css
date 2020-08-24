@@ -50,3 +50,48 @@ header {
     display: block;
     clear: both;
 }
+
+.btn {
+    boder: none;
+    background-color: red;
+    boder-radius: 25 px;
+    box-shadow: #0B0B0B;
+    color: #E5E5E5;
+    display: inline-block;
+    font-size: 22px;
+    line-height: 22px;
+    margin 16px 16px 16px 20px;
+    padding: 14px 34px;
+    text-align: center;
+    cursor: pointer;
+}
+
+button[disabled] {
+    cursor: default;
+    background: lightgrey;
+}
+
+.float-right {
+    float: right;
+}
+
+#password {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    display: block;
+    width: 100%;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 85px;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 2px dashed #c0c7cf;
+    border-radius: 6px;
+    resize: none;
+    overflow: hidden;
+}
