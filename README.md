@@ -4,7 +4,7 @@ This is a homework assignment where we use javascript to create a strong passwor
 
 Alerts will let the user know what will be included in the password and the password generates to the page in the <textarea>
 
-![](images/Password Generator Works.png)
+![](images/PassGen.png)
 
 In the JavaScript file you will see where I have commented different requirements of the homework that are also found below.
 
