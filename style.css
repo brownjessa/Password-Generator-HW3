@@ -12,3 +12,41 @@ body {
     padding-left: 18px;
     padding-right 18px;
 }
+
+header {
+    padding: 18px;
+    color: #ADACAC;
+    text-align: center;
+}
+
+.card {
+    background-color: #E5E5E5;
+}
+
+.card-top::after {
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 2px;
+}
+
+.card-middle {
+    text-align: center;
+}
+
+.card-bottom  {
+    text-align: center;
+}
+
+.card-bottom::before {
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 2px;
+}
+
+.card-bottom::after {
+    content: " ";
+    display: block;
+    clear: both;
+}
