@@ -1,5 +1,22 @@
 # Password-Generator-HW3
 
+This is a homework assignment where we use javascript to create a strong password generator.
+
+Alerts will let the user know what will be included in the password and the password generates to the page in the <textarea>
+
+![](images/Password Generator Works.png)
+
+In the JavaScript file you will see where I have commented different requirements of the homework that are also found below.
+
+Sources used outside of class information:
+
+https://www.youtube.com/watch?v=9sT03jEwcaw
+https://www.youtube.com/watch?v=duNmhKgtcsI
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
+
+Special thanks to my tutor from wyzant.com
+
 # 03 JavaScript: Password Generator
 
 Create an application that generates a random password based on user-selected criteria. This app will run in the browser and feature dynamically updated HTML and CSS powered by your JavaScript code. It will also feature a clean and polished user interface and be responsive, ensuring that it adapts to multiple screen sizes.
