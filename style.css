@@ -1,0 +1,14 @@
+html, body, .wrapper {
+    height: 100%;
+}
+
+body {
+    font-family: Georgia;
+    background-color: #E5E5E5;
+}
+
+.wrapper {
+    padding-top: 25px;
+    padding-left: 18px;
+    padding-right 18px;
+}
