@@ -1,97 +1,99 @@
-html, body, .wrapper {
-    height: 100%;
+html,
+body,
+.wrapper {
+  height: 100%;
 }
 
 body {
-    font-family: Georgia;
-    background-color: #E5E5E5;
+  font-family: Georgia;
+  background-color: #e5e5e5;
 }
 
 .wrapper {
-    padding-top: 25px;
-    padding-left: 18px;
-    padding-right 18px;
+  padding-top: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 header {
-    padding: 18px;
-    color: #ADACAC;
-    text-align: center;
+  padding: 18px;
+  color: #adacac;
+  text-align: center;
 }
 
 .card {
-    background-color: #E5E5E5;
+  background-color: #e5e5e5;
 }
 
 .card-top::after {
-    content: " ";
-    display: block;
-    width: 100%;
-    height: 2px;
+  content: " ";
+  display: block;
+  width: 100%;
+  height: 2px;
 }
 
 .card-middle {
-    text-align: center;
+  text-align: center;
 }
 
-.card-bottom  {
-    text-align: center;
+.card-bottom {
+  text-align: center;
 }
 
 .card-bottom::before {
-    content: " ";
-    display: block;
-    width: 100%;
-    height: 2px;
+  content: " ";
+  display: block;
+  width: 100%;
+  height: 2px;
 }
 
 .card-bottom::after {
-    content: " ";
-    display: block;
-    clear: both;
+  content: " ";
+  display: block;
+  clear: both;
 }
 
 .btn {
-    boder: none;
-    background-color: red;
-    boder-radius: 25 px;
-    box-shadow: #0B0B0B;
-    color: #E5E5E5;
-    display: inline-block;
-    font-size: 22px;
-    line-height: 22px;
-    margin 16px 16px 16px 20px;
-    padding: 14px 34px;
-    text-align: center;
-    cursor: pointer;
+  border: none;
+  background-color: red;
+  border-radius: 25 px;
+  box-shadow: #0b0b0b;
+  color: #e5e5e5;
+  display: inline-block;
+  font-size: 22px;
+  line-height: 22px;
+  margin: 16px 16px 16px 20px;
+  padding: 14px 34px;
+  text-align: center;
+  cursor: pointer;
 }
 
 button[disabled] {
-    cursor: default;
-    background: lightgrey;
+  cursor: default;
+  background: lightgrey;
 }
 
 .float-right {
-    float: right;
+  float: right;
 }
 
 #password {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    border: none;
-    display: block;
-    width: 100%;
-    padding-top: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 85px;
-    font-size: 1.2rem;
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border: 2px dashed #c0c7cf;
-    border-radius: 6px;
-    resize: none;
-    overflow: hidden;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  display: block;
+  width: 100%;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 85px;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 2px dashed #c0c7cf;
+  border-radius: 6px;
+  resize: none;
+  overflow: hidden;
 }
